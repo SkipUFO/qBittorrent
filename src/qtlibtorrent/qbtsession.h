@@ -46,6 +46,9 @@
 #include <libtorrent/version.hpp>
 #include <libtorrent/session.hpp>
 #include <libtorrent/ip_filter.hpp>
+//#include <libtorrent/upnp.hpp>
+//#include <libtorrent/natpmp.hpp>
+#include <libtorrent/aux_/session_impl.hpp>
 
 #include "qtracker.h"
 #include "qtorrenthandle.h"

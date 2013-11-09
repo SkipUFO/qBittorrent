@@ -30,6 +30,7 @@
 
 #include <QDebug>
 #include "sessionapplication.h"
+//#include <QSessionManager>
 
 SessionApplication::SessionApplication(const QString &id, int &argc, char **argv) :
 #ifdef Q_WS_MAC
@@ -41,8 +42,11 @@ QtSingleApplication(id, argc, argv)
 
 void SessionApplication::commitData(QSessionManager & manager) {
   Q_UNUSED(manager);
+#ifndef QT_NO_SESSIONMANAGER
+  //
   emit sessionIsShuttingDown();
   manager.release();
+#endif
 }
 
 bool SessionApplication::notify(QObject* receiver, QEvent* event) {

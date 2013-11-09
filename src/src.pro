@@ -61,6 +61,8 @@ DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS
 DEFINES += BOOST_FILESYSTEM_VERSION=2
 
 INCLUDEPATH += $$PWD
+#INCLUDEPATH += /usr/local/boost_1_54_0
+#INCLUDEPATH += /home/developer/projects/libtorrent-code
 
 
 # Resource files
